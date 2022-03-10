@@ -7,6 +7,7 @@ yarn create react-app client --template typescript
 ```
 
 ## yarn init auf oberster Ebene
+
 ```
 yarn init
 ```
@@ -17,12 +18,24 @@ yarn init
 yarn add -D typescript
 ```
 
-## eslint
+## eslint und prettier
 
 ### installieren
 
 ```shell
-yarn add -D eslint
+yarn add -D eslint prettier eslint-plugin-prettier eslint-config-prettier
+```
+
+### .prettierrc
+
+```shell
+{
+    "useTabs": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "printWidth": 120,
+    "trailingComma": "es5"
+}
 ```
 
 ### wegen typescript
@@ -31,7 +44,7 @@ yarn add -D eslint
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-## wegen React
+### wegen React
 
 ```shell
 yarn add -D eslint-plugin-react eslint-plugin-react-hooks
