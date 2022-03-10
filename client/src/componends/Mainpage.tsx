@@ -1,3 +1,5 @@
+import React from 'react';
+
 export function Mainpage(): JSX.Element {
-	return (<></>)
+	return (<><p>Mainpage</p></>);
 }
